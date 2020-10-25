@@ -1,0 +1,68 @@
+<html>
+    <head >
+        <link rel="icon" href="monster.png" sizes="16x16">
+        <title>Tag</title>
+    
+       <style>
+           html, body {
+               overflow: hidden;
+           }
+           
+           img {
+               visibility: hidden;
+           }
+           #button {
+            background:    #ff69b4;
+            border-radius: 20px;
+            color:         #fff;
+            display:       inline-block;
+            padding:       9px 21px;
+            font:          normal 700 23px/1 "Open Sans", sans-serif;
+            text-align:    center;
+            text-shadow:   1px 1px 0 #000;
+            margin-top: 20%;        
+        }
+
+        #buttonI {
+            background:    #91476c;
+            border-radius: 20px;
+            color:         #fff;
+            display:       inline-block;
+            padding:       9px 21px;
+            font:          normal 700 23px/1 "Open Sans", sans-serif;
+            text-align:    center;
+            text-shadow:   1px 1px 0 #000;
+            margin-top: 20%;        
+        }
+
+        
+        #gameScreen {
+            z-index: -1;
+        }
+        #wrapper {
+            text-align: center;
+            z-index: 1;  
+            visibility:visible;         
+        }
+
+        
+        p {
+            font-family: Arial;
+            color: black;
+        }
+        </style>
+    </head>
+    <body style="background-color:rgb(149, 132, 194);">
+
+        <div id="wrapper">
+            <button id="button" onClick="beginGame()">Start Game</button>
+            <br>
+            <br>
+            <p>MADE BY POOPS! w/ little help from Guffy</p>
+        </div>
+
+        <canvas id="gameScreen">This game is unavailable.</canvas>
+
+    </body>
+        <script src="game.js"></script>
+    </html>
